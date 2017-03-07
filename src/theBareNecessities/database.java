@@ -32,7 +32,6 @@ public class database {
                 return rs.getString(1);
             conn.close();
             return null;
-
         }
         catch(SQLException e){
             return e.toString();

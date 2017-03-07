@@ -22,6 +22,7 @@ public class database {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+        
         try{
             Connection conn = DriverManager.getConnection(mysqlAddr, mysqlUser, mysqlPass);
             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Ovelse");

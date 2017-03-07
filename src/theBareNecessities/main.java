@@ -3,11 +3,8 @@ package theBareNecessities;
 import theBareNecessities.database;
 
 
-public class main {
-
-	public main() {
-		System.out.println(database.test());
-	
-	}
-	
+class Main {
+    public static void main(String[] args) {
+    	System.out.println(database.test()); // Display the string.
+    }
 }

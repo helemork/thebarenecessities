@@ -23,9 +23,9 @@ ikke i selve javaprogrammering.
 
 ## Våre Use Cases:
 1. Registrere en treningsøkt med tilhørende data, 
-* dvs.med øvelser man har gjort, 
-* samt hvordan selve treningen har gått. 
-* inkl. periode. som og må opprettes.
+   * dvs.med øvelser man har gjort, 
+   * samt hvordan selve treningen har gått. 
+   * inkl. periode. som og må opprettes.
 2. Registrere nye øvelser i databasen med tilhørende data.
 3. Kunne registrere en treningsøkt som en mal og opprette en treningsøkt fra en mal.
 4. Kunne se en logg over treningsøkter innen et tidsrom eller en periode.

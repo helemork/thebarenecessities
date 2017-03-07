@@ -20,3 +20,14 @@ ikke i selve javaprogrammering.
 * Uthenting av rapport av den beste treningen den siste uka for hver type av trening. 
   Hva som er kriteriet for «best» må dere bestemme selv. 
 * Uthenting av statistikk fra den siste måneden (antall økter, antall timer og annet)
+
+## Våre Use Cases:
+1. Registrere en treningsøkt med tilhørende data, 
+* dvs.med øvelser man har gjort, 
+* samt hvordan selve treningen har gått. 
+* inkl. periode. som og må opprettes.
+2. Registrere nye øvelser i databasen med tilhørende data.
+3. Kunne registrere en treningsøkt som en mal og opprette en treningsøkt fra en mal.
+4. Kunne se en logg over treningsøkter innen et tidsrom eller en periode.
+5. Kunne se en oversikt over eksisterende øvelser
+

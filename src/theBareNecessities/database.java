@@ -121,18 +121,21 @@ public class database {
     };
     
 
-    public static String test(){
-        // PRINTER UT DET SISTE SOM ER LAGT TIL. SÅ VI VET AT DET VIRKER SJØ.
+    public static String getAllOvelse(){
+        // Heinjte ut aillj øvelsainj sjø.
+    	
+    	String str = "";
         
         try{
             Connection conn = connectToDb();
             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Ovelse");
 
             ResultSet rs = stmt.executeQuery();
-            if(rs.next())
-                return rs.getString(1);
+            while(rs.next()){
+            	str += rs.getString(1) + ": " + rs.getString(2) + "\n"; 	         	
+            }
             conn.close();
-            return null;
+            return str;
 
         }
         catch(SQLException e){

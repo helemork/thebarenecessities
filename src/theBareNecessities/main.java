@@ -16,17 +16,17 @@ class Main {
     	
     	System.out.println(database.createKondisjonStyrke("pushØps", "dytt deg opp fra bakken", 0, 12, 4));
     	
-    	*/
+    	
     	
     	
     	System.out.println(database.createUtholdenhet("springe", "en fot etter den andre", 34.23f));
     	
+    	*/
     	
     	
     	
     	
-    	
-    	System.out.println(database.test()); // Display the string.
+    	System.out.println(database.getAllOvelse()); // Display the string.
     	
     	///adding a branch stuff
     	

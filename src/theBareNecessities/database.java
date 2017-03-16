@@ -77,7 +77,7 @@ public class database {
     };
     
     public static String createKondisjonStyrke(String name, String description, int belastning, int Antallrepitisoner, int Antallsett  ){
-    	// LEGG INN EN annen type øvelse (alle uten resultat mao)
+    	// LEGG INN EN KondisjonStyrke
     	
     	Connection conn = connectToDb();
     	try{
@@ -100,7 +100,7 @@ public class database {
     };
     
     public static String createUtholdenhet(String name, String description, float lengde){
-    	// LEGG INN EN annen type øvelse (alle uten resultat mao)
+    	// LEGG INN EN Utholdenhet
     	
     	Connection conn = connectToDb();
     	try{
@@ -144,7 +144,7 @@ public class database {
     }
     
     public static String getAllPerioder(){
-        // Henter ut alle periodene registrert i databsen
+        //Henter ut alle periodene registrert i databsen
     	
     	String str = "";
         
@@ -189,6 +189,7 @@ public class database {
 
 	public static String createInnetrening(String tid, int varighet, int dagsform, int prestasjon, String notat,
 			int periode,int tilskuere, int luftkva) {
+		//Oppretter en Trening og en Innetrening og knyter dem sammen
 
 		Connection conn = connectToDb();
     	try{
@@ -215,6 +216,7 @@ public class database {
 
 	public static String createUtetrening(String tid, int varighet, int dagsform, int prestasjon, String notat,
 			int periode,int ver, int temp) {
+		//Oppretter en Trening og en Utetrening og knyter dem sammen
 
 		Connection conn = connectToDb();
     	try{
@@ -240,6 +242,7 @@ public class database {
 	}
 
 	public static String createPeriode(String fra, String til, String goal) {
+		//Oppretter en periode
 		System.out.println(""+fra+til+goal);
 		Connection conn = connectToDb();
     	try{
@@ -256,66 +259,4 @@ public class database {
 		return "Du har opprettet en periode";
 	}
 	
-	
-    
-    
-     //	INSERT INTO `Trening` (`treningstid`, `varighet`, `dagsform`, `prestasjon`, `notat`, `periodeid`) VALUES ('2017-03-22 15:00:00', '3', '1', '2', 'Det va vondt', '2');
-    
-    
-    
-    //Div eksempelkode fra PU prosjektet mitt for å endre ting i databasen.. kan kanskje brukes ??
-     
-    
-    
-      
-     /* 
-	public static boolean runQuery(String query, String... args){
-        try{
-            Connection conn = DriverManager.getConnection(mysqlAddr, mysqlUser, mysqlPass);
-            PreparedStatement stmt = conn.prepareStatement(query);
-            int i = 0;
-            for(String arg : args)
-                stmt.setString(++i, arg);
-            return stmt.executeUpdate() != 0;
-        }
-        catch(SQLException e){
-            return false;
-        }
-    }
-    
-    // Add lecture
-    public static void createLecture(Lecture lecture){
-    	try{
-            Connection conn = DriverManager.getConnection(mysqlAddr, mysqlUser, mysqlPass);
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO lecture (courseID, number, name) VALUES (?,?,?)");
-            stmt.setInt(1, Integer.parseInt(lecture.getCourseID()));
-            stmt.setInt(2, Integer.parseInt(lecture.getlectureNumber()));
-            stmt.setString(3, lecture.getlectureName());
-            
-            stmt.executeUpdate();
-    	}
-        catch(SQLException e){
-        	System.out.println(e);
-        }
-    }
-    
-    // Delete lecture
-    public static void deleteLecture(Lecture lecture){
-    	try{
-            Connection conn = DriverManager.getConnection(mysqlAddr, mysqlUser, mysqlPass);
-            PreparedStatement stmt = conn.prepareStatement("DELETE FROM lecture WHERE lectureID = ?");
-            //DELETE FROM 'prodoteam_db'.'lecture'WHERE 'lecture'.'lectureID' = 15
-            stmt.setInt(1, Integer.parseInt(lecture.getLectureID()));
-            //
-            stmt.executeUpdate();
-    	}
-        catch(SQLException e){
-        	System.out.println(e);
-        }
-    }
-    
-    *
-    */
-    
-   
 }

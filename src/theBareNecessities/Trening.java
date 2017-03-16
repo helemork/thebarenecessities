@@ -1,3 +1,11 @@
+/*
+ * The Bare Necessities
+ * Runs the commands for accessing the training part of the database, adding and showing trainings and periods.
+ * 
+ * Group50
+ * */
+
+
 package theBareNecessities;
 
 import java.util.Scanner;

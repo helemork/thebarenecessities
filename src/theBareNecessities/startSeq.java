@@ -1,6 +1,6 @@
 /*
  * The Bare Necessities
- * Start sequence that also runs every time you navigate back to the main menu
+ * Start sequence that also runs every time you navigate back to the main menu, sends you to Trening or Ovelse
  * 
  * Group50
  * */

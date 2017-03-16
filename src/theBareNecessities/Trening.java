@@ -7,7 +7,7 @@ public class Trening {
 			
 			Scanner scanner = new Scanner(System.in);
 	    	while (true){
-	    		System.out.println("Ka vil du gjør no?");
+	    		System.out.println("Hva vil du gjør nå?");
 	    		System.out.println("1) Vis treningslog for en gitt periode:");
 	    		System.out.println("2) Registrer ny trening:");
 	    		System.out.println("3) Legg til ny periode");
